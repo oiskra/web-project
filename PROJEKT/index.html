@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rokkitt:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Fitnest</title>
+</head>
+<body>
+    <img src="./img/bg.jpg" alt="tło" id="bg">
+        <header>
+            <!-- <div id="mobileHeader" style = "display: none;">
+                <h1>FITNEST</h1>
+                <p>Health Fitness Strengh &amp; Balance</p>
+                <div id="iconContent">
+                    <div class="menuIcon"></div>
+                    <div class="menuIcon"></div>
+                    <div class="menuIcon"></div>
+                </div>
+            </div> -->
+            <div id="headerContainer">
+                <h1>FITNEST</h1>
+                <p>Health Fitness Strengh &amp; Balance</p>
+                <img id="headerPic" src="./img/dumbbells-in-a-rowkopia.jpg" alt="hantle w rzędzie">
+            </div>
+            <nav id="desktopNav">
+                <a class = "navLinks" href="#" onclick="ChangeToMainPage()"><div class="box">Strona Główna</div></a>
+                <a class = "navLinks" href="#" onclick="ChangeToMembershipPage()"><div class="box">Członkostwo</div></a>
+                <a class = "navLinks" href="#" onclick="ChangeToActivitiesPage()"><div class="box">Zajęcia</div></a>
+                <a class = "navLinks" href="#" onclick="ChangeToContactPage()"><div class="box">Kontakt</div></a>                          
+            </nav>
+            <nav id="mobileNav" onclick="SideBarTrigger()">
+                <div id="iconContent">
+                    <div class="menuIcon"></div>
+                    <div class="menuIcon"></div>
+                    <div class="menuIcon"></div>
+                </div>      
+            </nav>
+        </header>
+        <aside style="display: none;">            
+            <ul>
+                <li><h3>Spis treści</h3></li>
+                <li onclick="ChangeToMainPage()"><a href="#">Strona Główna</a></li>
+                <li onclick="ChangeToMembershipPage()"><a href="#">Członkostwo</a></li>
+                <li onclick="ChangeToActivitiesPage()"><a href="#" >Zajęcia</a></li>
+                <li onclick="ChangeToContactPage()"><a href="#">Kontakt</a></li>
+            </ul>
+        </aside>
+        <main id = "mainPage">
+            <section>
+                <img src="./img/sportsman-with-earphones-running-and-enjoyingkopia.jpg" alt="biegacz z słuchawkami">
+                <div id = "ready">Jesteś gotowy? Dołącz do nas i zacznij ćwiczyć!</div>
+            </section>
+            <article> 
+                <div class="aboutText">
+                    <p>
+                        <h2>O nas</h2>
+                        Fitnest to nie tylko klub fitness. To miejsce, w którym osiągasz cele,
+                        zdobywasz kolejne wyżyny swoich umiejętności, poznajesz ludzi i spełniasz
+                        efektywnie czas wolny. Chcemy dotrzeć do jak największej liczby Polaków, aby przekazać im swoją pasję
+                        do zdrowego stylu życia!
+                    </p>
+                </div>
+                <div class="aboutText">
+                    <h2>Co oferujemy</h2>
+                    <ul>
+                        <li>Najwyższej klasy sprzęt</li>
+                        <li>Zajęcia w cenie karnetu</li>
+                        <li>Siłownie otwartą 24/7</li>
+                        <li>Bezpłatną wodę</li>
+                        <li>Klimatyzowane pomieszczenia</li>
+                        <li>Wysokiej jakości obsługę klienta</li>
+                        <li>Darmowe Wi-Fi</li>
+                    </ul>
+                </div>
+            </article>
+        </main>
+        <main id="membership" style="display: none;"> 
+            <div class="memberCard">
+                <span id="memberPrice">50zł</span>
+                <div class="memberInfo">
+                    <h3>Karnet SPORT</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing 
+                       elit. Optio molestiae ipsam quo et magnam tenetur 
+                       ullam officiis eos sit, quas laborum itaque quisquam 
+                       natus corporis, sapiente pariatur laboriosam corrupti 
+                       velit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="memberCard">
+                <span id="memberPrice">70zł</span>
+                <div class="memberInfo">
+                    <h3>Karnet STANDARD</h3>
+                    <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing 
+                       elit. Optio molestiae ipsam quo et magnam tenetur 
+                       ullam officiis eos sit, quas laborum itaque quisquam 
+                       natus corporis, sapiente pariatur laboriosam corrupti 
+                       velit.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="memberCard">
+                <span id="memberPrice">100zł</span>
+                <div class="memberInfo">
+                    <h3>Karnet PREMIUM</h3>
+                    <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing 
+                       elit. Optio molestiae ipsam quo et magnam tenetur 
+                       ullam officiis eos sit, quas laborum itaque quisquam 
+                       natus corporis, sapiente pariatur laboriosam corrupti 
+                       velit.
+                    </p>
+                </div>
+            </div>
+        </main >
+        <main id="activities" style="display: none;">
+            <div class="cart">                
+                <img src="./img/yoga.jpg" alt="woman doing yoga">
+                <p class = "cartName">YOGA</p>  
+                <p class = cartDate>Poniedziałek 18:00</p>
+            </div>
+
+            <div class="cart">                
+                <img src="./img/box.jpg" alt="boxing man">
+                <p class = "cartName">BOKS</p>
+                <p class = cartDate>Wtorek 18:00</p>
+            </div>
+
+            <div class="cart">   
+                <img src="./img/pilates.jpg" alt="pilates room">             
+                <p class = "cartName">PILATES</p>
+                <p class = cartDate>Środa 18:00</p>
+            </div>
+
+            <div class="cart">                
+                <img src="./img/crossfit.jpg" alt="crossfit">
+                <p class = "cartName">CROSSFIT</p>
+                <p class = cartDate>Czwartek 18:00</p>
+            </div>
+
+            <div class="cart">                
+                <img src="./img/aerobic.jpg" alt="aerobic">
+                <p class = "cartName">AEROBIC</p>
+                <p class = cartDate>Piątek 18:00</p>
+            </div>
+
+            <div class="cart">                
+                <img src="./img/wrestling.jpg" alt="two men wrestling">
+                <p class = "cartName">WRESTLING</p>
+                <p class = cartDate>Sobota 18:00</p>
+            </div>
+
+        </main>
+        <main id="contact" style="display: none;">
+            <form action="#">
+                <h2>Skontaktuj się z nami!</h2>
+                <input id = "formsMail" type="email" name="email" placeholder = "E-mail" required> <br>
+                <input id = "formsName" type="text" name="name" placeholder="Imię i Nazwisko" required> <br>
+                <input id = "formsTopic" type="text" name="topic" placeholder="Temat"> <br>
+                <textarea name="message" id="formsMessage" placeholder="Wiadomość" required></textarea> <br>
+                <input id = "formsBtn" type="button" value="Wyślij">
+            </form>
+        </main>
+        <footer>  
+                <div>
+                    <h3>Lokalizacja</h3>
+                    <p>ul. Krakowska 70</p>
+                    <p>12-345 Kraków</p>
+                    
+                </div>
+                <div>
+                    <h3>Obsługa klienta</h3>
+                    <p>E-mail:</p>  
+                    <p>fitnest@gym.pl</p>                 
+                    <p>Nr Telefonu:</p>
+                    <p>+48 12 345 67 98</p>
+                </div>
+                <div id="socialmedia">
+                    <h3>Social Media</h3>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./img/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./img/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://www.twitter.com" target="_blank">
+                        <img src="./img/twitter.png" alt="twitter">
+                    </a>
+                </div>
+        </footer>
+        <script src="./script.js"></script>
+</body>
+
+</html>
